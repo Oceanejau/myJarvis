@@ -6,6 +6,14 @@ My little Jarvis in python
 
 https://console.groq.com/docs/quickstart
 
+download the Vosk model you need and put it in the Models file unziped:
+
+https://alphacephei.com/vosk/models
+
+then modify the paths lign 150:
+    if langue == "en":
+        langue = os.path.join(os.getcwd(), "Models", "vosk-model-small-en-us-0.15")
+
 create your API key
 
 export GROQ_API_KEY=<your-api-key-here>
